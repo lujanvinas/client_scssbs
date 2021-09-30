@@ -1,0 +1,187 @@
+
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+// Global
+
+body {
+    background-color: $black;
+    font-family: $secondary-font;
+}
+
+
+h1 {
+    color: $yellow-600;
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    line-height: .6;
+
+}
+
+
+h2, h3, h4, h5 {
+    color: $white;
+    font-family: $primary-font;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+
+h2, h3 {
+    text-transform: uppercase;
+
+}
+
+
+p {
+    color: $white;
+    line-height: 22px;
+
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+
+
+//navbar
+
+.logo {
+    letter-spacing: 5px;
+}
+
+
+.nav-link {
+    color: $gray-300;
+
+    &:hover {
+        color: $yellow-600;
+            
+        }
+}
+
+
+.gallery .card {
+    border: none;
+    background-color: $black;
+
+}
+
+
+.title {
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: left;
+}
+
+.space {
+    margin-left: 40%;
+}
+
+
+.services .card {
+    background-color:  $black;
+
+        a {
+            border-bottom: 1px solid $white;
+        
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.gallery {
+    margin: 100px 0;
+}
+
+.info p {
+    line-height: 40px;
+}
+
+
+// buttons
+
+.showcase-btns > button {
+    background-color:  $black;
+    border: 1px solid $white;
+    text-transform: capitalize;
+
+    &:hover {
+        color:  $black;
+        background-color: $white;
+        
+    }
+
+}
+
+// section btm lead
+.st-ld h2 {
+    font-size: 4rem;
+}
+
+
+// MediaQueries
+
+@media only screen and (max-width: 1400px) {
+
+    h1 {
+        font-size: 6rem;
+        
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+        
+    }
+
+    .title .space {
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    h1 {
+        font-size: 4rem;
+        
+    }
+
+    .st-ld h2 {
+        font-size: 3rem;
+    }
+
+    .title .space {
+        margin-left: 0;
+    }
+    
+}
